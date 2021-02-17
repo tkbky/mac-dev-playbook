@@ -1,9 +1,9 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: true
-configure_terminal: true
-configure_osx: true
+configure_dotfiles: false
+configure_terminal: false
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
@@ -23,9 +23,9 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/tkbky/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/personal/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
@@ -37,31 +37,44 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - github/gh/gh
-  - go
-  - gpg
-  - httpie
-  - iperf
   - libevent
+  - gettext
+  # PL version managers
+  - rbenv
+  - nodenv
+  - pyenv
+  # Databases
   - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
+  - postgresql@9.5
+  - mysql
+  - mysql@5.6
+  - mysql@5.7
+  - redis
+  # Package managers
+  - maven
+  # Utils
+  - aliyun-cli
+  - circleci
+  - chamber
+  - coreutils
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+  - pandoc
+  - pcre
   - ssh-copy-id
-  - cowsay
   - readline
   - openssl
   - pv
   - wget
   - wrk
   - zsh-history-substring-search
-
+  - git
+  - github/gh/gh
+  - gpg
+  - iperf
+  - imagemagick
+  - docker-credential-helper-ecr
+  - the_silver_searcher
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
@@ -72,14 +85,36 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-pro
-  - slack
-  - sublime-text
-  - transmit
+  # - google-chrome
+  # - slack
   - vagrant
+  - aws-vault
+  - mutespotifyads
+  - phantomjs
+  - pomotroid
+  - sequel-ace
+  - stretchly
+  - virtualbox
+  - virtualbox-extension-pack
+  - postman
+  - wechat
+  - spectacle
+  - spotify
+  - 1password
+  - charles
+  - beekeeper-studio
+  - maccy
+  - obsidian
+  - tunnelblick
+  - adobe-acrobat-reader
+  - wechatwebdevtools
+  - atom
+  - visual-studio-code
+  - intellij-idea-ce
+  - pycharm-ce
+  - iterm2
+  - figma
+  - keka
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
