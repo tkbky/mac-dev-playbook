@@ -1,0 +1,9 @@
+aws-vault
+mactex
+mutespotifyads
+phantomjs
+pomotroid
+sequel-ace
+stretchly
+virtualbox
+virtualbox-extension-pack
