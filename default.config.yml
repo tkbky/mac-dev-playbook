@@ -54,6 +54,7 @@ homebrew_installed_packages:
   - maven
   # Utils
   - aliyun-cli
+  - awscli
   - circleci
   - chamber
   - coreutils
@@ -91,6 +92,7 @@ homebrew_cask_apps:
   # - slack
   - vagrant
   - aws-vault
+  - authy
   - mutespotifyads
   - phantomjs
   - pomotroid
