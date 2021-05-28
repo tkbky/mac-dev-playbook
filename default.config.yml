@@ -43,6 +43,7 @@ homebrew_installed_packages:
   - rbenv
   - nodenv
   - pyenv
+  - jenv
   # Databases
   - sqlite
   - postgresql@9.5

@@ -20,6 +20,7 @@ hub
 icu4c
 ilmbase
 imagemagick
+jenv
 jpeg
 libde265
 libffi
